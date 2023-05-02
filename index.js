@@ -28,8 +28,8 @@ function displayBooks() {
   bookList.innerHTML = '';
   books.forEach((book) => {
     const li = document.createElement('li');
-    li.textContent = `${book.title}`;
-    li.textContent = ` ${book.author}`;
+    li.innerHTML = `Title: ${book.title} <br> <br> Author: ${book.author} <br><br> `;
+    // li.textContent = 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
     removeBtn.addEventListener('click', () => {
