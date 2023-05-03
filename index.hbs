@@ -29,7 +29,6 @@ function displayBooks() {
   books.forEach((book) => {
     const li = document.createElement('li');
     li.innerHTML = `Title: ${book.title} <br> <br> Author: ${book.author} <br><br> `;
-    // li.textContent = 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
     removeBtn.addEventListener('click', () => {
