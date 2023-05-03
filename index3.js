@@ -24,7 +24,7 @@ class BookList {
       bookDiv.style.backgroundColor = 'rgba(125, 125, 125, 0.3)';
       const removeBtn = document.createElement('button');
       removeBtn.textContent = 'Remove';
-      removeBtn.classList.add("remove-button");
+      removeBtn.classList.add('remove-button');
       bookDiv.innerHTML = `<h5>"${book.title}" by <span>${book.author}</span></h5>`;
       removeBtn.addEventListener('click', () => {
         this.removeBook(book);
@@ -32,7 +32,7 @@ class BookList {
       bookDiv.append(removeBtn);
       this.bookList.appendChild(bookDiv);
       const numBooks = this.bookList.children.length;
-      if(numBooks % 2 === 0 ){
+      if (numBooks % 2 === 0) {
         bookDiv.style.backgroundColor = 'rgb(255, 255, 255)';
       }
     });
