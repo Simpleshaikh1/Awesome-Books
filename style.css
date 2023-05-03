@@ -3,3 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.body {
+  width: 70%;
+  margin: 10% auto;
+}
+
+header {
+  text-align: center;
+  font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
+  margin-bottom: 3%;
+}
+
+.list-section {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+  font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-button {
+  padding: 0.4rem;
+  border: 2px solid;
+  flex-shrink: 0;
+}
+
+form {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+#title {
+  margin-bottom: 1rem;
+}
+
+#author {
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 2px solid;
+  padding: 0.5rem;
+}
+
+#add {
+  padding: 0.5rem;
+  margin-left: 8rem;
+}

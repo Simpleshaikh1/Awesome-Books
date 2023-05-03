@@ -21,14 +21,20 @@ class BookList {
     this.bookList.innerHTML = '';
     this.books.forEach((book) => {
       const bookDiv = document.createElement('li');
-      bookDiv.innerHTML = `Title: ${book.title} <br> Author: ${book.author} <br>`;
+      bookDiv.style.backgroundColor = 'rgba(125, 125, 125, 0.3)';
       const removeBtn = document.createElement('button');
       removeBtn.textContent = 'Remove';
+      removeBtn.classList.add("remove-button");
+      bookDiv.innerHTML = `<h5>"${book.title}" by <span>${book.author}</span></h5>`;
       removeBtn.addEventListener('click', () => {
         this.removeBook(book);
       });
       bookDiv.append(removeBtn);
       this.bookList.appendChild(bookDiv);
+      const numBooks = this.bookList.children.length;
+      if(numBooks % 2 === 0 ){
+        bookDiv.style.backgroundColor = 'rgb(255, 255, 255)';
+      }
     });
   }
 
