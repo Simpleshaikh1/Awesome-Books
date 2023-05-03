@@ -11,7 +11,7 @@ class Collection {
     this.titleInput = document.getElementById('title');
     this.authorInput = document.getElementById('author');
     this.addBtn = document.getElementById('add');
-    this.bookList = document.getElementById('bookList');
+    this.bookList = document.getElementById('book-list');
     this.addBtn.addEventListener('click', () => this.addBook());
     this.displayBooks();
   }

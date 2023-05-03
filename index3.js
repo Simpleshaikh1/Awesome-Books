@@ -23,7 +23,6 @@ class BookList {
       this.bookList.innerHTML = '';
       this.books.forEach((book) => {
         const bookDiv = document.createElement('li');
-        // const hr = document.createElement('hr');
         bookDiv.innerHTML = `Title: ${book.title} <br> Author: ${book.author} <br>`;
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
