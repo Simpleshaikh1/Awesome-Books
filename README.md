@@ -43,8 +43,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/Simpleshaikh1/Awesome-Books)
-
 
 
 ## 💻 Getting Started
