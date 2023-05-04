@@ -2,11 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
 }
 
 .body {
   width: 70%;
-  margin: 10% auto;
+  margin: 1% auto;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-nav h2 {
+  padding: 1rem;
 }
 
 header {
@@ -33,7 +54,6 @@ ul li {
 .remove-button {
   padding: 0.4rem;
   border: 2px solid;
-  flex-shrink: 0;
 }
 
 form {
@@ -44,17 +64,19 @@ form {
 h3 {
   text-align: center;
   font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
-  font-size: large;
+  font-size: 2rem;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 
 #title {
   margin-bottom: 1rem;
+  width: 30rem;
 }
 
 #author {
   margin-bottom: 1rem;
+  width: 30rem;
 }
 
 input {
@@ -63,6 +85,26 @@ input {
 }
 
 #add {
-  padding: 0.5rem;
-  margin-left: 8rem;
+  padding: 0.5rem 1.5rem;
+  margin-left: 25rem;
+}
+
+.copy-right {
+  margin-top: 20rem;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+/* // not to be shown  */
+
+#contact-info {
+  display: none;
+}
+
+.contact-info-section {
+  display: none;
+}
+
+.form1 {
+  display: none;
 }
