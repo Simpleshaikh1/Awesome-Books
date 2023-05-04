@@ -56,9 +56,29 @@ ul li {
   border: 2px solid;
 }
 
+.contact-info-section {
+  margin-top: 3rem;
+}
+
+.contact-info-section ul li {
+  margin-left: 2rem;
+  list-style-type: disc;
+  padding: 1rem;
+}
+
+.contact-info-section h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-info-section p {
+  font-size: large;
+  font-weight: bold;
+}
+
 form {
   text-align: center;
-  margin: 1.5rem;
+  margin-top: 4rem;
 }
 
 h3 {
@@ -66,7 +86,7 @@ h3 {
   font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bolder;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 #title {
@@ -90,21 +110,9 @@ input {
 }
 
 .copy-right {
-  margin-top: 20rem;
+  position: fixed;
+  bottom: 0;
+  width: 70%;
   border: 2px solid black;
   padding: 1rem;
-}
-
-/* // not to be shown  */
-
-#contact-info {
-  display: none;
-}
-
-.contact-info-section {
-  display: none;
-}
-
-.form1 {
-  display: none;
 }
