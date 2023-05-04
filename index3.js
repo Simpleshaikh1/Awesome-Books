@@ -70,6 +70,8 @@ const showBooks = () => {
   awesome.style.display = '';
 };
 
+showBooks();
+
 const showAdd = () => {
   contact.style.display = 'none';
   books.style.display = 'none';
