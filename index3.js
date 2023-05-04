@@ -51,35 +51,8 @@ class BookList {
   }
 }
 
-const form = document.querySelector('#form');
-const title = document.querySelector('#title');
-const author = document.querySelector('#author');
-const btn = document.querySelector('#add');
-
 const lists = new BookList();
 lists.display();
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const newBook = {
-    title: title.value,
-    author: author.value,
-  };
-
-  lists.addBook(newBook);
-  form.reset();
-});
-
-btn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const newBook = {
-    title: title.value,
-    author: title.value,
-  };
-
-  lists.addBook(newBook);
-  form.reset();
-});
 
 const listNav = document.querySelector('#list');
 const addNav = document.querySelector('#add-new');
@@ -110,6 +83,7 @@ const showContact = () => {
   addBook.style.display = 'none';
   awesome.style.display = 'none';
 };
+
 listNav.addEventListener('click', showBooks);
 addNav.addEventListener('click', showAdd);
 contactNav.addEventListener('click', showContact);
