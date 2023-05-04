@@ -68,8 +68,10 @@ const showBooks = () => {
   contact.style.display = 'none';
   books.style.display = 'block';
   addBook.style.display = 'none';
-  awesome.style.display = '';
+  awesome.style.display = 'block';
 };
+
+showBooks();
 
 const showAdd = () => {
   localStorage.setItem('currentSection', 'add');
