@@ -30,6 +30,12 @@
   padding: 1rem;
 }
 
+#date {
+  margin-left: 45rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
 header {
   text-align: center;
   font-family: 'comic Sans MS', Arial, Helvetica, sans-serif;
