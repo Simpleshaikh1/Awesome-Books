@@ -1,5 +1,5 @@
-import Interface from './interface';
-import Storage from './storage';
+import Interface from './interface.js';
+import Storage from './storage.js';
 
 export default class BookList {
   constructor() {
@@ -28,6 +28,6 @@ export default class BookList {
   removeBook = (book) => {
     this.books = this.books.filter((b) => b !== book);
     this.storage.setBooks(this.books);
-    this.interface.displayBooks(this.books);
+    this.interface.display(this.books);
   }
 }

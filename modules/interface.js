@@ -13,7 +13,6 @@ export default class Interface {
         this.authorInput.value = '';
       }
     });
-    this.display();
   }
 
   display = (books) => {

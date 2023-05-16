@@ -7,27 +7,21 @@ const books = document.querySelector('.list-section');
 const addBook = document.querySelector('.form1');
 const awesome = document.querySelector('#awesome-heading');
 
-const showBooks = () => {
-  localStorage.setItem('currentSection', 'list');
+export const showBooks = () => {
   contact.style.display = 'none';
   books.style.display = 'block';
   addBook.style.display = 'none';
   awesome.style.display = 'block';
 };
 
-showBooks();
-
-const showAdd = () => {
-  localStorage.setItem('currentSection', 'add');
+export const showAdd = () => {
   contact.style.display = 'none';
   books.style.display = 'none';
   addBook.style.display = 'block';
   awesome.style.display = 'none';
-  showAdd();
 };
 
-const showContact = () => {
-  localStorage.setItem('currentSection', 'contact');
+export const showContact = () => {
   contact.style.display = 'block';
   books.style.display = 'none';
   addBook.style.display = 'none';
@@ -37,5 +31,3 @@ const showContact = () => {
 listNav.addEventListener('click', showBooks);
 addNav.addEventListener('click', showAdd);
 contactNav.addEventListener('click', showContact);
-
-export { showAdd, showBooks, showContact };

@@ -30,10 +30,10 @@
   padding: 1rem;
 }
 
-.time {
-  border: 1px solid blue;
-  margin-left: 30rem;
-  margin-top: -2rem;
+#date {
+  margin-left: 45rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
 
 header {
